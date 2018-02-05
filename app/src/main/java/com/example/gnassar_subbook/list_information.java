@@ -37,6 +37,7 @@ public class list_information extends AppCompatActivity {
         subscriptionCost = (TextView) findViewById(R.id.costText);
         subscriptionComment = (TextView) findViewById(R.id.commentText);
 
+
         /**
          * Save button in this class creates a new subscription object
          */

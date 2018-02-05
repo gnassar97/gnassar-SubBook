@@ -27,9 +27,11 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 
+
+
 public class MainActivity extends AppCompatActivity {
     private ListView viewList;
-    private static final String FILENAME = "savefile2.sav";
+    private static final String FILENAME = "save_file.sav";
     public static ArrayAdapter<Subscriptions> subscriptionAdapter;
     public static ArrayList<Subscriptions> subscriptions;
     private TextView TotalCost;
@@ -63,6 +65,10 @@ public class MainActivity extends AppCompatActivity {
         TotalCost.setText("$" + sumOfCost);
     }
 
+    /**
+     * Buttonclick createSub in activity_main.xml brings us to the list_information activity
+     * @param v is the view
+     */
     public void createSub(View v) {
         Intent intent = new Intent(this, list_information.class);
         startActivity(intent);
